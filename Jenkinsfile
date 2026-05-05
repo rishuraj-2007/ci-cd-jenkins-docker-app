@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Code') {
-            steps {
-                git 'https://github.com/rishuraj-2007/ci-cd-jenkins-docker-app.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 bat 'npm install'
